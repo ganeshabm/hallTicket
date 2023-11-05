@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hall Ticket</title>
+  </head>
+  <style>
+    * {
+      margin: 0 auto;
+      box-sizing: border-box;
+      font-size: 12px;
+    }
+    body {
+      margin: 30px;
+      border: 0.15rem solid #474446;
+      padding: 10px;
+    }
+    .header,
+    .footer {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .hBox-1 {
+      text-align: left;
+      margin: 0;
+    }
+    .hBox-2 {
+      text-align: center;
+      margin: 0;
+    }
+    .hBox-3 {
+      text-align: right;
+      margin: 0;
+    }
+    #logo {
+      height: 80px;
+      width: 190px;
+    }
+    #qrcode {
+      height: 70px;
+      width: 70px;
+    }
+    span {
+      font-weight: bold;
+      font-size: 13px;
+      margin: 5px 0px 0px 0px;
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+    }
+    #image {
+      margin: 0;
+      height: 80px;
+      width: 70px;
+    }
+    .info {
+      margin: 0;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .table {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex: auto;
+    }
+    .table table tbody tr th {
+      font-size: 15px;
+    }
+    table,
+    tr,
+    td,
+    th {
+      border: 1px solid #000; /* Add a border to the whole table */
+      border-collapse: collapse;
+      width: -webkit-fill-available;
+    }
+    td,
+    th {
+      padding: 3px;
+      margin: 0;
+    }
+    td {
+      font-size: 12px;
+    }
+    .label {
+      display: flex;
+      justify-content: center;
+    }
+    .labels span {
+      margin: 6px 0px 0px 0px;
+    }
+    .note {
+      margin-top: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .footer {
+      margin-top: 100px;
+    }
+    .date {
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+    ol {
+      padding: 10px;
+      margin: 0;
+    }
+    .labels {
+      margin: 0;
+      font-weight: bold;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .imgright {
+      display: flex;
+      flex: auto;
+      flex-direction: row;
+      justify-content: end;
+    }
+  </style>
+  <body>
+    <div style="position: relative">
+      <div class="header">
+        <div class="hBox-1">
+          <img id="logo" src="./images/logo.jpg" alt="logo.png" />
+        </div>
+        <div class="hBox-2">
+          <span>JSS MAHAVIDYAPEETHA </span><br />
+          <span style="font-size: 20px"
+            >JSS Science and Technology University</span
+          ><br /><span>JSS TI Campus, Mysuru 570006</span><br /><span
+            style="font-size: 20px"
+            >ADMISSION TICKET</span
+          ><br />
+          <span style="font-weight: normal">OCTOBER 2023 EXAMINATION</span>
+        </div>
+        <div class="hBox-3">
+          <img id="qrcode" src="images/qrcode/1.png" alt="qrcode" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="container">
+          <div class="labels">
+            <span style="margin-top: 5px">Programme &nbsp;</span>
+            <span>College Code &nbsp;</span>
+            <span>Student's Name&nbsp;</span>
+          </div>
+          <div class="info">
+            <span style="font-weight: normal; font-size: 15px"
+              >: MCA1 - MASTER OF COMPUTER APPLICATIONS</span
+            >
+            <span style="font-weight: normal; font-size: 15px"
+              >: 1001 - JSS STU, SJCE, Mysuru</span
+            >
+            <span style="font-size: 15px">: GANESHA B M</span>
+          </div>
+        </div>
+        <div class="imgright">
+          <img alt="image" src="images/image.jpeg" id="image" />
+        </div>
+      </div>
+      <div class="container" style="width: calc(100% - 70px)">
+        <div class="table details">
+          <table>
+            <tr>
+              <th>USN</th>
+              <th>0</th>
+              <th>1</th>
+              <th>J</th>
+              <th>S</th>
+              <th>T</th>
+              <th>2</th>
+              <th>2</th>
+              <th>P</th>
+              <th>M</th>
+              <th>C</th>
+              <th>0</th>
+              <th>1</th>
+              <th>8</th>
+            </tr>
+          </table>
+          <span style="width: 35%"></span>
+          <table>
+            <tr>
+              <th>Student ID</th>
+              <th>2</th>
+              <th>2</th>
+              <th>0</th>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+              <th>9</th>
+              <th>4</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="container" style="justify-content: flex-start">
+        <span> Exam Center : </span>
+        <span style="font-weight: normal">1002 - JSS STU, SJCE, Mysuru</span>
+      </div>
+      <div class="label">
+        <span>SUBJECTS / PAPERS APPEARING</span>
+      </div>
+      <div class="subjectlabel">
+        <table>
+          <tr>
+            <th>SL.NO</th>
+            <th>Sem</th>
+            <th>Course Code</th>
+            <th>Subject Title</th>
+            <th>Date and Time</th>
+            <th>Answer Book NO</th>
+            <th>Invigilator signature</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>II</td>
+            <td>22MCA210</td>
+            <td>JAVA AND J2EE</td>
+            <td>02/11/2023 - 09:30AM to 12:30PM</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>II</td>
+            <td>22MCA220</td>
+            <td>ADVANCED ALGORITHMS</td>
+            <td>04/11/2023 - 09:30AM to 12:30PM</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>II</td>
+            <td>22MCA230</td>
+            <td>SOFTWARE ENGINEERING</td>
+            <td>06/11/2023 - 09:30AM to 12:30PM</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>II</td>
+            <td>22MCA262</td>
+            <td>NOSQL</td>
+            <td>08/11/2023 - 09:30AM to 12:30PM</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>II</td>
+            <td>22PNI260OE</td>
+            <td>ADVANCED WIRELESS TECHNOLOGIES -OE</td>
+            <td>13/11/2023 - 09:30AM to 12:30PM</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="note">
+        Note : <br />
+        <ol>
+          <li>
+            Student must report at examination Venue (Theory/practical) 15
+            minutes prior to the examination time.
+          </li>
+          <li>
+            Student is responsible to carry the stationary required for the
+            examination. No exchange of stationary will be allowed in the Exam
+            Hall.
+          </li>
+          <li>
+            Student must not carry any study material / smart device / any
+            electronic gadget inside the exam hall. If any student is found with
+            prohibited material during examination strict action will be taken
+            against the student as per the policy.
+          </li>
+          <li>
+            Student is not allowed to leave the exam hall during exam time.
+          </li>
+          <li>
+            It is compulsory to carry the hall ticket and student ID card for
+            exam (Theory / Practical).
+          </li>
+          <li>
+            Student is advised to check the Question Paper code before
+            answering.
+          </li>
+          <li>
+            Invigilator should verify the Question Paper code / course code, USN
+            / seat number written on the answer booklet and also the Question
+            Paper code / course code printed on the hall ticket before signing
+            on the hall ticket and answer booklet.
+          </li>
+          <li>
+            Student is advised to read the instructions given on the the answer
+            booklet before answering.
+          </li>
+        </ol>
+      </div>
+      <div class="footer">
+        Student Signature
+        <div style="margin-right: 0">Controller of Examinations</div>
+      </div>
+      <div class="date">Date: November 1, 2023, 10:20 pm</div>
+    </div>
+  </body>
+</html>

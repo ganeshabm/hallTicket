@@ -1,0 +1,123 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+body {
+  margin: 30px;
+  border: 0.15rem solid #474446;
+  padding: 10px;
+}
+.header,
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hBox-1 {
+  text-align: left;
+  margin: 0;
+}
+.hBox-2 {
+  text-align: center;
+  margin: 0;
+}
+.hBox-3 {
+  text-align: right;
+  margin: 0;
+}
+#logo {
+  height: 80px;
+  width: 190px;
+}
+#qrcode {
+  height: 70px;
+  width: 70px;
+}
+span {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 5px 0px 0px 0px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+#image {
+  margin: 0;
+  height: 80px;
+  width: 70px;
+}
+.info {
+  margin: 0;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.table {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: auto;
+}
+.table table tbody tr th {
+  font-size: 15px;
+}
+table,
+tr,
+td,
+th {
+  border: 1px solid #000; /* Add a border to the whole table */
+  border-collapse: collapse;
+  width: -webkit-fill-available;
+}
+td,
+th {
+  padding: 3px;
+  margin: 0;
+}
+td {
+  font-size: 12px;
+}
+.label {
+  display: flex;
+  justify-content: center;
+}
+.note {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer {
+  margin-top: 100px;
+}
+.date {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+ol {
+  padding: 10px;
+  margin: 0;
+}
+.labels {
+  margin: 0;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.imgright {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  justify-content: end;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "hallticket",
+  "version": "1.0.0",
+  "description": "download hallticket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ganesha B M",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
