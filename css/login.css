@@ -1,0 +1,38 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.container {
+  position: relative;
+}
+body {
+  width: -webkit-fill-available;
+  background-image: url('https://studentportal.universitysolutions.in/img/BG.jpg');
+}
+.card1 {
+  background-image: linear-gradient(to right, #133c55, #3683dc);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 10%;
+}
+.font-25 {
+  font-size: 25px;
+}
+input {
+  padding: 8px;
+  width: 100%;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+.inner-addon {
+  position: relative;
+  margin-bottom: 30px;
+}
+i {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}

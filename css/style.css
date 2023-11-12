@@ -4,6 +4,7 @@
   font-size: 12px;
 }
 body {
+  width: fit-content;
   margin: 30px;
   border: 0.15rem solid #474446;
   padding: 10px;
@@ -20,6 +21,8 @@ body {
   margin: 0;
 }
 .hBox-2 {
+  flex-direction: column;
+  display: flex;
   text-align: center;
   margin: 0;
 }
@@ -97,9 +100,11 @@ td {
   justify-content: space-between;
 }
 .footer {
+  font-weight: bold;
   margin-top: 100px;
 }
 .date {
+  font-weight: bold;
   margin-top: 100px;
   margin-bottom: 150px;
 }
@@ -120,4 +125,74 @@ ol {
   flex: auto;
   flex-direction: row;
   justify-content: end;
+}
+@media screen and (max-width: 600px) {
+  span {
+    font-size: 8px;
+  }
+  #image {
+    height: 60px;
+    width: 60px;
+  }
+  .table table tbody tr th {
+    font-size: 7px;
+  }
+  td {
+    font-size: 8px;
+  }
+  #logo {
+    height: 80px;
+    width: 105px;
+  }
+  #qrcode {
+    height: 70px;
+    width: 60px;
+  }
+  td,
+  th {
+    font-size: 6px;
+    padding: 1px;
+    margin: 0;
+  }
+  li {
+    font-size: 10px;
+  }
+  .date {
+    font-size: 7px;
+  }
+  .footer {
+    font-size: 7px;
+  }
+  .footer div {
+    font-size: 7px;
+  }
+  .body {
+    margin: 20px;
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 366px) {
+  #qrcode {
+    height: 70px;
+    width: 55px;
+  }
+  #logo {
+    height: 80px;
+    width: 94px;
+  }
+  .table table tbody tr th {
+    font-size: 6px;
+  }
+  td,
+  th {
+    font-size: 5px;
+    padding: 1px;
+    margin: 0;
+  }
+  li {
+    font-size: 7px;
+  }
+  span {
+    font-size: 6px;
+  }
 }

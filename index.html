@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card1">
+      <div class="body">
+        <p
+          style="
+            color: #fff;
+            font-weight: 800;
+            transform: scaleY(1.5);
+            line-height: 1.1;
+          "
+        >
+          <span class="font-25">Welcome </span><br />
+          To Student Portal
+        </p>
+        <p style="color: #fff; padding: 25px 0px 5px 0px" class="font-25">
+          Sign In
+        </p>
+
+        <form id="signin" action="login" novalidate="novalidate">
+          <div class="inner-addon left-addon m-b-30">
+            <i class="fa fa-user" style="font-size: 14px"></i>
+            <input
+              type="text"
+              id="regno"
+              class="form-control1"
+              name="username"
+              placeholder="Mobile"
+              required=""
+              minlength="10"
+              maxlength="10"
+              autocomplete="off"
+              autofocus=""
+              aria-required="true"
+              aria-invalid="false"
+            />
+          </div>
+          <div class="inner-addon left-addon m-b-20">
+            <i class="fa fa-lock" style="font-size: 14px"></i>
+            <input
+              type="password"
+              id="passwd"
+              class="form-control1"
+              name="password"
+              placeholder="Password"
+              minlength="8"
+              required=""
+              autocomplete="off"
+              aria-required="true"
+              aria-invalid="false"
+            />
+          </div>
+          <div style="position: relative">
+            <!-- <center> -->
+            <input
+              type="checkbox"
+              checked="checked"
+              name="termsAndConditions"
+              id="itTandC"
+              required=""
+              aria-required="true"
+              style="position: absolute; width: auto"
+            />
+            <label
+              style="
+                color: #fff;
+                font-size: 14px !important;
+                padding-left: 20px !important;
+              "
+              for="itTandC"
+              >I Have Read the<a
+                style="color: #fff; font-size: 16px !important"
+                href="instruction.html"
+                target="_blank"
+                ><b> Instructions </b></a
+              ></label
+            >
+            <!-- </center> -->
+          </div>
+          <div style="padding: 10px">
+            <button
+              class="btn btn-block btn-lg waves-effect"
+              style="
+                background: #3683dc;
+                color: #fff;
+                font-size: larger;
+                padding: 5px;
+                border-radius: 5px;
+              "
+            >
+              Login
+            </button>
+          </div>
+          <span>%error%</span>
+        </form>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
